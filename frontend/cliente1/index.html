@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <button id="registerBtn">Register</button>
+        <button id="loginBtn">Login</button>
+
+        <div id="registerForm" style="display: none;">
+            <h2>Register</h2>
+            <input type="text" id="registerUsername" placeholder="Username">
+            <input type="password" id="registerPassword" placeholder="Password">
+            <button id="submitRegister">Submit</button>
+        </div>
+
+        <div id="loginForm" style="display: none;">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button id="submitLogin">Submit</button>
+        </div>
+
+        <div id="postForm" style="display: none;">
+            <h2>Create Post</h2>
+            <textarea id="postContent" placeholder="Write your post here"></textarea>
+            <button id="submitPost">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
