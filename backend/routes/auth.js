@@ -5,6 +5,12 @@ const router = express.Router();
 
 const usersPath = path.join(__dirname, '../data/users.json');
 
+router.get('/users', (req, res) => {
+    const users = JSON.parse(fs.readFileSync(usersPath, 'utf8'));
+    const usernames = users.map(user => user.username); 
+    res.status(200).json(usernames);
+});
+
 router.post('/register', (req, res) => {
     const { username, password } = req.body;
     const users = JSON.parse(fs.readFileSync(usersPath, 'utf8'));

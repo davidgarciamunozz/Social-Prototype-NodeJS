@@ -6,10 +6,10 @@ const router = express.Router();
 const postsPath = path.join(__dirname, '../data/posts.json');
 
 router.post('/create', (req, res) => {
-    const { username, content } = req.body;
+    const { username, title, description, imageUrl } = req.body; 
     const posts = JSON.parse(fs.readFileSync(postsPath, 'utf8'));
 
-    posts.push({ username, content });
+    posts.push({ username, title, description, imageUrl }); 
     fs.writeFileSync(postsPath, JSON.stringify(posts, null, 2));
     res.status(201).json({ message: 'Post created successfully' });
 });

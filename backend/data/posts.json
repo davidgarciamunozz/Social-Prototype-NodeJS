@@ -1,10 +1,20 @@
 [
   {
     "username": "David",
-    "content": "hola"
+    "title": "hola",
+    "description": "descripcion",
+    "imageUrl": "https://media.istockphoto.com/id/1314635298/es/foto/minature-bull-terrier-sobre-hierba-bajo-el-sol.jpg?s=612x612&w=0&k=20&c=EeUPpydXil1ca3oeNXpBk7mzC39HgLu4YmaVeQjKyoY="
+  },
+  {
+    "username": "David",
+    "title": "POST ",
+    "description": "POSTTTT",
+    "imageUrl": "https://media.istockphoto.com/id/1314635298/es/foto/minature-bull-terrier-sobre-hierba-bajo-el-sol.jpg?s=612x612&w=0&k=20&c=EeUPpydXil1ca3oeNXpBk7mzC39HgLu4YmaVeQjKyoY="
   },
   {
     "username": "Juan P",
-    "content": "cualquier mierda"
+    "title": "post 2",
+    "description": "asdasdsaa",
+    "imageUrl": "https://stability-images-upload.s3.amazonaws.com/v1_txt2img_c22ef7a0-7f9d-414b-86ef-51a840aa9770.png"
   }
 ]
