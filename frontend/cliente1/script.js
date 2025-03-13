@@ -42,13 +42,15 @@ document.getElementById('submitLogin').addEventListener('click', async () => {
 });
 
 document.getElementById('submitPost').addEventListener('click', async () => {
-    const content = document.getElementById('postContent').value;
+    const title = document.getElementById('postTitle').value;
+    const description = document.getElementById('postDescription').value;
+    const imageUrl = document.getElementById('postImageUrl').value;
     const username = document.getElementById('loginUsername').value;
 
     const response = await fetch('http://localhost:8000/posts/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, content })
+        body: JSON.stringify({ username, title, description, imageUrl })
     });
 
     const data = await response.json();
